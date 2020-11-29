@@ -25,6 +25,7 @@ namespace EntityFrameworkExample
 		{
 			personContext.Database.EnsureDeleted();
 			personContext.Database.EnsureCreated();
+
 			app.UseStaticFiles();
 			app.UseMvc(routes =>
 			{
